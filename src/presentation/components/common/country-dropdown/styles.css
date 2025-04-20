@@ -1,0 +1,134 @@
+.dropdown-container {
+  position: relative;
+  width: 100%;
+}
+
+.dropdown-input {
+  padding: 12px 16px;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 12px;
+  cursor: pointer;
+  background: #fff;
+  min-height: 52px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: box-shadow 0.2s;
+  gap: 12px;
+}
+
+.dropdown-input:hover,
+.dropdown-input:active {
+  border: 1.5px solid #007aff;
+  box-shadow: 0 4px 16px rgba(0, 122, 255, 0.08);
+}
+
+.country-flag {
+  width: 28px;
+  height: 21px;
+  border-radius: 4px;
+  margin-right: 10px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.07);
+  background: #f5f5f5;
+}
+
+.dropdown-input-label {
+  color: #222;
+  font-size: 16px;
+  font-weight: 500;
+  flex: 1;
+  margin-right: 8px;
+}
+
+.dropdown-arrow {
+  font-size: 18px;
+  color: #888;
+  margin-left: auto;
+}
+
+.dropdown-sheet {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70vh;
+  z-index: 1000;
+}
+
+.country-sheet-overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.country-sheet-content {
+  background-color: #fff;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding: 24px 16px 0 16px;
+  transform: translateY(100%);
+  animation: slideUp 0.3s ease-out forwards;
+  height: 70vh;
+  box-shadow: 0 -2px 16px rgba(0, 0, 0, 0.08);
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.country-sheet-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  color: #222;
+  text-align: center;
+}
+
+.countries-list {
+  height: 60vh;
+  padding-bottom: 12px;
+}
+
+.countries-list-scroll {
+  height: 100%;
+  width: 100%;
+}
+
+.country-list-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 8px 14px 0;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+  transition: background 0.18s;
+  border-radius: 8px;
+}
+
+.country-list-item:hover {
+  background: #f7faff;
+}
+
+.country-item {
+  font-size: 16px;
+  color: #222;
+  font-weight: 500;
+}
+
+.field-label {
+  display: block;
+  font-size: 15px;
+  font-weight: 500;
+  color: #555;
+  margin-bottom: 6px;
+  margin-left: 2px;
+}

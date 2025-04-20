@@ -1,0 +1,21 @@
+#inputBox {
+  height: 44px;
+  padding: 0 16px;
+  border-radius: 10px;
+  border: 1px solid #cccccc;
+  font-size: 16px;
+  color: #000000;
+  background-color: #ffffff;
+  width: 100%;
+  outline: none;
+  transition: border-color 0.2s ease-in-out;
+}
+
+#inputBox:focus {
+  border-color: #007aff; /* Cor azul padrão do iOS */
+  box-shadow: 0 0 0 1px rgba(0, 122, 255, 0.2);
+}
+
+#inputBox::placeholder {
+  color: #999999;
+}

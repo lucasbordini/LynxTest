@@ -1,0 +1,45 @@
+.receipt-screen-container {
+  max-width: 480px;
+  margin: 24px auto;
+  padding: 24px 16px;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.08),
+    0 1.5px 4px rgba(0, 0, 0, 0.04);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.receipt-screen-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.receipt-screen-nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 75px;
+  padding: 10px 16px;
+  height: 40px; /* Adjust height as needed */
+  background-color: #fff; /* Or match your theme */
+  border-bottom: 1px solid #e3e8ee; /* Optional separator */
+}
+
+.receipt-screen-nav-back-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.receipt-screen-nav-save-icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  /* Add any additional styling needed for the save icon */
+}

@@ -1,0 +1,120 @@
+.transfer-dropdown-container {
+  position: relative;
+  border: 1px solid #ccc; /* Default border */
+  border-radius: 4px;
+  padding: 10px;
+  background-color: #fff;
+}
+
+.transfer-dropdown-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.transfer-dropdown-input-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.transfer-dropdown-input-title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+.transfer-dropdown-input-subtitle {
+  font-size: 12px;
+  color: #666;
+}
+
+.transfer-dropdown-chevron {
+  width: 15px;
+  height: 15px;
+  /* Add styles for your chevron image if needed */
+}
+
+/* Bottom Sheet Styles (inspired by CountryDropdown) */
+.transfer-dropdown-sheet {
+  position: fixed; /* Or absolute, depending on desired behavior */
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  top: 0px; /* Cover the whole screen */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Align sheet content to the bottom */
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.sheet-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+}
+
+.sheet-content {
+  background-color: #fff;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding: 20px;
+  max-height: 70%; /* Limit sheet height */
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Needed for z-index stacking if overlay is sibling */
+}
+
+.sheet-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+  color: #333;
+}
+
+.quotes-list {
+  flex-grow: 1;
+  height: 100vh;
+}
+
+.quotes-list-scroll {
+  width: 100%;
+  height: 100%;
+}
+
+.quote-item {
+  padding: 15px 10px;
+  border: 1px solid #ccc; /* Default gray border */
+  border-radius: 4px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f9f9f9;
+}
+
+.quote-item.selected {
+  border-color: #007bff; /* Blue border for selected item */
+  background-color: #e7f3ff;
+}
+
+.quote-item-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-item-title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.quote-item-subtitle {
+  font-size: 12px;
+  color: #666;
+}

@@ -1,0 +1,41 @@
+.transfer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  margin-top: 4rem;
+}
+
+/* Using global classes from styles.css */
+.section {
+  background: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+.input-field {
+  transition: border-color 0.3s ease;
+  border: 1px solid #e3e8ee;
+}
+
+.input-field:focus {
+  border-color: #0066cc;
+  outline: none;
+}
+
+.error-message {
+  background: #fff0f0;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ffcccc;
+}
+
+.send-transfer-button {
+  margin-top: 24px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

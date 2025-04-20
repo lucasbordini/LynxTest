@@ -1,0 +1,15 @@
+.error-banner {
+  position: relative;
+  top: 80px;
+  left: 0px;
+  right: 0px;
+  background-color: #ff3333;
+  padding: 10px;
+  z-index: 9998; /* Below loading overlay but above content */
+}
+
+.error-banner-text {
+  color: white;
+  text-align: center;
+  font-size: 14px;
+}
